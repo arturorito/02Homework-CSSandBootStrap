@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <style>
         .ModHeader {
@@ -17,104 +17,74 @@
         }
         .BackgroundSite{
             background-color: cadetblue;
-
+        }
+        .BoxMargins{
+            margin: 100px 0px;
+           
+        }
+        .FooterColor{
+            background-color: white;
         }
 
       
     </style>
 
 </head>
-<body>
-  <div class=BackgroundSite>
+<body class=BackgroundSite>
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class=ModHeader class="navbar-brand" href="./contact.html"><h2>Arturo Rodriguez</h2></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./portfolio.html">Profile</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">About<span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <a class=ModHeader class="navbar-brand" href="./contact.html"><h2>Arturo Rodriguez</h2></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./portfolio.html">Profile</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">About<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-<p></p>
-    <div class="container">
+    <main  class="container">
+      <div class=BoxMargins>
         <div class="row">
-          <div class="col-sm-7">
+          <div class="col-sm-8">
             <div class="card" >
                 <div class="card-body">
-                  <h1 class="card-title"><ColorFont>Contact</h1></ColorFont>
-                  <form class="needs-validation" novalidate>
-                    <div class="form-row">
-                      <div class="col-md-10 mb-3">
-                        <label for="validationCustom01">Name</label>
-                        <input type="text" class="form-control" id="validationCustom01" placeholder="Name" required>
-
-                        <div class="valid-feedback">
-                          Looks good!
-                        </div>
-                      </div>
-                      <div class="col-md-10 mb-3">
-                        <label for="validationCustom02">Email</label>
-                        <input type="text" class="form-control" id="validationCustom02" placeholder="Email" required>
-                        <div class="valid-feedback">
-                          Looks good!
-                        </div>
-                      </div>
+                  <h1><ColorFont>About Me</h1></ColorFont>
+                  <div class="row">
+                    <div class="col-md-12 mb-3">
+                      <img style="padding: 0px 10px 10px 0px;" class="float-left" class="img img-thumbnail" src="http://placehold.it/200x200">   
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, facilis! Totam, soluta sint animi quis eveniet voluptatem provident beatae odio explicabo rerum aliquam enim qui, reiciendis similique! Dolorum, soluta ducimus.                 
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident inventore similique adipisci eum temporibus delectus deleniti sed neque quis non saepe, illo natus, consequatur doloremque praesentium totam ratione voluptate. Ut?
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum doloribus voluptate similique quidem repudiandae, aspernatur soluta neque recusandae molestias provident odio, dolores beatae optio ab, impedit asperiores! Eius, ut animi.
                     </div>
-                    <div class="form-row">
-                      <div class="col-md-10 mb-3">
-                        <label for="validationCustom03">Message</label>
-                        <textarea class="form-control" rows="4" id="comment" placeholder="Message"></textarea>
-                      </textarea>
-                        <div class="invalid-feedback">
-                          You must include a message before submitting your information.
-                        </div>
-                      </div>
-                    </div>
-                    <button type="button" class=ModHeader>Submit</button>
-
-                  </form>
-                  
-                  <script>
-                  // Example starter JavaScript for disabling form submissions if there are invalid fields
-                  (function() {
-                    'use strict';
-                    window.addEventListener('load', function() {
-                      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                      var forms = document.getElementsByClassName('needs-validation');
-                      // Loop over them and prevent submission
-                      var validation = Array.prototype.filter.call(forms, function(form) {
-                        form.addEventListener('submit', function(event) {
-                          if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                          }
-                          form.classList.add('was-validated');
-                        }, false);
-                      });
-                    }, false);
-                  })();
-                  </script>          
                   </div>
-            </div>            
-        </div>
-          <div class="col-sm-5">
+                  <div class="row">
+                    <div class="col-md-12 mb-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sunt amet officiis, iure placeat sapiente excepturi laboriosam, quas consequuntur omnis eligendi minima eaque ea? Nam similique corrupti quia consequatur ut!
+                    </div>
+                  </div>          
+                </div>
+          </div>            
+          <div class="col-sm-4">
           </div>
         </div>
+      </div>
+    </main>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="row">
+        <div class="col-12">
+        </div>
       </div>  
-       
-    </div>   
      
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
